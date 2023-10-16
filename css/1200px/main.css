@@ -24,6 +24,9 @@
     .custom-main-right{
         width: 50vw;
     }
+    .custom-main-right::spelling-error{
+        text-decoration: underline wavy red;
+    }
     img{
         max-height: 75vh;
         margin: auto;
