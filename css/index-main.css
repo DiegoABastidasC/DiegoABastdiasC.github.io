@@ -1,43 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inclusive+Sans&family=Kanit:wght@100;300&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
-:root{
-    --color1-primario: #000;
-    --color2-primario: #000;
-    --color3-primario: #000;
-    --color4-primario: #000;
-    --color5-primario: #000;
-    --color1:#666666;
-    --color2:#8c8c8c;
-    --color3:#2196f3;
-    --color4:#6bbef9;
-    --color5:#97e9ff;
-    /* #454546
-    #666666
-    #8c8c8c
-    #e00000
-    #ff0000 */
-    /* --color1: #000000;
-    --color2: #333333;
-    --color3: #555555;
-    --color4: #888888;
-    --color5: #001f3f;
-    --color6: #0074D9;
-    --color7: #FF4136;
-    --color8: #1E90FF;
-    --color9: #008000;
-    --color10: #00FF00;  */
-    
-    
-}   
+
 *{
     margin: 0;
     padding: 0;
 }
 html{
     font-family: Inclusive Sans;
-    color: white;
+    color: var(--p_color);
 }
 body{
-    background-color: var(--color2);
+    background-color: var(--color1);
 }
 /*header*/
 @media screen and (min-width:1024px) {
