@@ -1,7 +1,7 @@
 @import url(../general.css);
 
 /*requiere que cualquier campo abajo tenga una distancia de --header_px*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width:1200px) {
     .custom-main-card{
         display: flex;
         justify-content: center;
