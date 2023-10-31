@@ -3,8 +3,8 @@
     position: absolute;
     top: 50vh;
     left: 50vw;
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
     background-color: rgba(138, 43, 226,0.5);
     z-index: -1;
     border-radius: 15px;

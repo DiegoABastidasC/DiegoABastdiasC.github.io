@@ -2,6 +2,7 @@
 
 :root{
     --body-color:#333;
+    --conoce-mas-color: #222;
     
     --color-black1:#222;
     --color-black2:#444;
@@ -63,4 +64,10 @@ body{
     background-color: var(--color-black1);
     border-radius: 10px;
     border: 2px solid var(--body-color);
+}
+.hide{
+    display: none;
+}
+#show{
+    display: block;
 }

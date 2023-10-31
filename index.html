@@ -6,12 +6,19 @@
     <title>DiegoABastidasC</title>
     <link rel="shortcut icon" href="./svg/dev.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/general.css"> 
+
     <link rel="stylesheet" href="./css/1200px/header.css">
     <link rel="stylesheet" href="./css/1200px/main.css">
+    <link rel="stylesheet" href="./css/1200px/conocer-mas.css">
+
     <link rel="stylesheet" href="./css/992px/header.css">
     <link rel="stylesheet" href="./css/992px/main.css">
+    <link rel="stylesheet" href="./css/992px/conocer-mas.css">
+
     <link rel="stylesheet" href="./css/768px/header.css">
     <link rel="stylesheet" href="./css/768px/main.css">
+    <link rel="stylesheet" href="./css/768px/conocer-mas.css">
+    
     <link rel="stylesheet" href="./css/box.css">
 </head>
 <body>
@@ -19,7 +26,7 @@
         
         <div class="custom-header">
             <nav class="custom-nav">
-                <li><a href="#">Conoce más</a></li>
+                <li><a href="#conoce-mas">Conoce más</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Historias de éxito</a></li>
@@ -27,24 +34,63 @@
         </div>
     </header>
     <main>
-        <div class="custom-main">
+        <section class="custom-main">
             <div class="custom-main-card">
                 <div class="custom-main-left">
                     <img  src="./png/foto-frontal-2.png" alt="mi foto">
                 </div>
                 <div class="custom-main-right">
-                    <h1>Ing. Electrónico</h1>
-                    <h2>Diego Alejandro Bastidas Cruz</h2>
+                    <h1 id="h1-custom">Ing. Electrónico</h1>
+                    <h2 id="h2-custom">Diego Alejandro Bastidas Cruz</h2>
                     <p>Profesional Ingeniero Electrónico graduado de la Universidad Santo Tomás, con experiencia en diseño, implementación de circuitos y desarollo de páginas web</p>
                     
                 </div>
             </div>
-        </div>
-        <div id="productos" class="custom-main">
-            
-        </div>
+        </section>
+        <section id="conoce-mas" class="conoce-mas-custom">
+            <h1 class="conoce-mas-title">Conoce más</h1>
+            <div class="container-custom-conoce-mas-carousel">
+                <button class="conoce-mas-left-button">&lt;</button>
+                <button class="conoce-mas-right-button">&gt;</button>
+                <div class="conoce-mas-carousel-slide">
+                    <span>🛒</span>
+                    <div class="carousel-content">
+                        <h1 class="carousel-slide-title">hola mundo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
+                    </div>
+                </div>
+                <div class="hide conoce-mas-carousel-slide">
+                    <span>📷</span>
+                    <div class="carousel-content">
+                        <h1 class="carousel-slide-title">hola mundo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
+                    </div>
+                </div>
+                <div class="conoce-mas-carousel-slide">
+                    <span>💻</span>
+                    <div class="carousel-content">
+                        <h1 class="carousel-slide-title">hola mundo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
+                    </div>
+                </div>
+                <div class=" conoce-mas-carousel-slide">
+                    <span>📱</span>
+                    <div class="carousel-content">
+                        <h1 class="carousel-slide-title">hola mundo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
+                    </div>
+                </div>
+                <div class="hide conoce-mas-carousel-slide">
+                    <span>🚀</span>
+                    <div class="carousel-content">
+                        <h1 class="carousel-slide-title">hola mundo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <span class="custom-box"></span>
+    <span class="custom-box"></span>    
     <script src="./script/floating-boxes.js"></script>
 </body>
 </html>
