@@ -1,41 +1,60 @@
 @import url(../general.css);
 
-/*requiere que cualquier campo abajo tenga una distancia de --header_px*/
 @media screen and (min-width: 1200px) {
-    /* main */
-    #h1-custom{
-        font-size: calc((50vw)/10);
+    .page-main{
+        height: 100vh;
+        scroll-snap-align: start;
+        background-color: var(--main-color);
     }
-    #h2-custom{
-        font-size: calc((50vw)/20);
+    .main>h1{
+        font-size: 100px;
+        font-family: Ephesis;
     }
-    .custom-main-card{
+    .products-container{
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: calc(100vh - var(--header-px));
-
-        box-sizing: border-box;
-        margin: 0 100px 0 100px;
-        border-radius: 7px;
+        gap: 15px;
     }
-    .custom-main-left{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50vw;
-        padding: 10px;
+    .product-card{
+        width: 250px;
     }
-    .custom-main-right{
-        width: 50vw;
-    }
-    .custom-main-right::spelling-error{
-        text-decoration: underline wavy red;
-    }
-    img{
-        max-height: 75vh;
-        margin: auto;
+    .product-img-container{
+        margin: auto;   
     }
 
+    .product-text{
+        text-align: justify;
+    }
+
+
+
+
+    .animation-from-top{
+        animation: from-top 2s linear forwards;
+        position: relative;
+        opacity: 0;
+    }
+    .animation-from-right{
+        animation: from-right 2s linear forwards;
+        position: relative;
+        opacity: 0;
+    }
+    @keyframes from-top {
+        from{
+            bottom: 100px;
+        }
+        to{
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes from-right {
+        from{
+            left: 100px;
+        }
+        to{
+            left: 0;
+            opacity: 1;
+        }
+    }
 }
-

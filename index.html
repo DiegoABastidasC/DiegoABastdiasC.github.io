@@ -4,93 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiegoABastidasC</title>
-    <link rel="shortcut icon" href="./svg/dev.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/general.css"> 
-
-    <link rel="stylesheet" href="./css/1200px/header.css">
-    <link rel="stylesheet" href="./css/1200px/main.css">
-    <link rel="stylesheet" href="./css/1200px/conocer-mas.css">
-
-    <link rel="stylesheet" href="./css/992px/header.css">
-    <link rel="stylesheet" href="./css/992px/main.css">
-    <link rel="stylesheet" href="./css/992px/conocer-mas.css">
-
-    <link rel="stylesheet" href="./css/768px/header.css">
-    <link rel="stylesheet" href="./css/768px/main.css">
-    <link rel="stylesheet" href="./css/768px/conocer-mas.css">
-    
-    <link rel="stylesheet" href="./css/box.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/1200px/general1200px.css">
+    <link rel="stylesheet" href="css/992px/general992px.css">
+    <link rel="stylesheet" href="css/768px/general768px.css">
+    <link rel="shortcut icon" href="svg/dev.svg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        
-        <div class="custom-header">
-            <nav class="custom-nav">
-                <li><a href="#conoce-mas">Conoce más</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Historias de éxito</a></li>
-            </nav>
+    <div class="page-container">
+        <div class="page-header">
+            <header>
+                <section class="header">
+                    <div class="header-text-container">
+                        <h1 class="animation-from-top"> Bienvenidos a mi portafolio </h1>  
+                        <h2 class="animation-from-top"> mi nombre es Diego Bastidas </h2>
+                    </div>
+                    <div class="header-img-container">
+                        <img class="animation-from-right" src="png/foto-frontal-2.png" alt="" style="max-height: 90vh;">
+                        <div class="header-img-filter animation-from-right"></div>
+                    </div>
+                </section>
+            </header>
         </div>
-    </header>
-    <main>
-        <section class="custom-main">
-            <div class="custom-main-card">
-                <div class="custom-main-left">
-                    <img  src="./png/foto-frontal-2.png" alt="mi foto">
-                </div>
-                <div class="custom-main-right">
-                    <h1 id="h1-custom">Ing. Electrónico</h1>
-                    <h2 id="h2-custom">Diego Alejandro Bastidas Cruz</h2>
-                    <p>Profesional Ingeniero Electrónico graduado de la Universidad Santo Tomás, con experiencia en diseño, implementación de circuitos y desarollo de páginas web</p>
-                    
-                </div>
-            </div>
-        </section>
-        <section id="conoce-mas" class="conoce-mas-custom">
-            <h1 class="conoce-mas-title">Conoce más</h1>
-            <div class="container-custom-conoce-mas-carousel">
-                <button class="conoce-mas-left-button">&lt;</button>
-                <button class="conoce-mas-right-button">&gt;</button>
-                <div class="conoce-mas-carousel-slide">
-                    <span>🛒</span>
-                    <div class="carousel-content">
-                        <h1 class="carousel-slide-title">hola mundo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
+        <div class="page-main">
+            <main>
+                <section class="main">
+                    <h1>Productos</h1>
+                    <div class="products-container">
+                        <div class="product-card">
+                            <div class="product-img-container">
+                                <img src="svg/chrome.svg" alt="">
+                            </div>
+                            <h1 class="product-title">Páginas Web</h1>
+                            <p class="product-text">Puedes solicitar tu página web a la medida, puede ser únicamente publicitaria o funcional con bases de datos e incluir otras funcionalidades.</p>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="svg/play store.svg" alt="">
+                            </div>
+                            <h1 class="product-title">Apliaciones Móviles</h1>
+                            <p class="product-text">Aplicaciones móviles en Android: Play Store si quieres una interacción más familiar con tus clientes.</p>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="svg/microchip.svg" alt="">
+                            </div>
+                            <h1 class="product-title">Soluciónes Electrónicas</h1>
+                            <p class="product-text">Si requieres algún dispositivo electrónico o la reparación de alguno nosotros podemos repararlo o diseñarlo para ti.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="hide conoce-mas-carousel-slide">
-                    <span>📷</span>
-                    <div class="carousel-content">
-                        <h1 class="carousel-slide-title">hola mundo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
-                    </div>
-                </div>
-                <div class="conoce-mas-carousel-slide">
-                    <span>💻</span>
-                    <div class="carousel-content">
-                        <h1 class="carousel-slide-title">hola mundo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
-                    </div>
-                </div>
-                <div class=" conoce-mas-carousel-slide">
-                    <span>📱</span>
-                    <div class="carousel-content">
-                        <h1 class="carousel-slide-title">hola mundo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
-                    </div>
-                </div>
-                <div class="hide conoce-mas-carousel-slide">
-                    <span>🚀</span>
-                    <div class="carousel-content">
-                        <h1 class="carousel-slide-title">hola mundo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla pariatur amet quidem cumque natus mollitia maxime ullam atque distinctio hic illum quis minima odit architecto autem sit, similique culpa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <span class="custom-box"></span>    
-    <script src="./script/floating-boxes.js"></script>
+                </section>
+            </main>
+        </div>
+        <div class="page-footer">
+            <footer>
+                <section class="main">
+                </section>
+            </footer>
+        </div>
+    </div>
+    <script src="script/restart-animations.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

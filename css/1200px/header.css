@@ -1,25 +1,81 @@
 @import url(../general.css);
 
-/*requiere que cualquier campo abajo tenga una distancia de --header_px*/
+
 @media screen and (min-width: 1200px) {
-    
-    .custom-header{
-        height: var(--header-px);
-        width: 100%;
-        
-        
+    .page-header{
+        scroll-snap-align: start;
     }
-    .custom-nav{
-        height: 100%;
-        list-style-type: none;
+    .header{
         display: flex;
-        justify-content:space-around;
         align-items: center;
+        justify-content: center;
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative;
     }
-    .custom-nav>li>a{
-        color: var(--nav_text);
+    .header-text-container{ 
+        width: 500px;
+        height: 300px;
     }
-    .custom-nav>li>a:hover{
-        color: var(--nav_text_hover);
+    .header h1{
+        font-size: 100px;
+        font-family: Ephesis;
+    }
+    .header-img-container{
+        position: relative;
+        height: 530px;
+        width: 400px;
+    }
+
+    .header img{
+        position: absolute;
+        height: 530px;
+        width: 400px;
+        border-radius: 80% 20% 82% 18% / 83% 18% 82% 17%;  
+    }
+    .header-img-filter{
+        height: 530px;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+    }
+    .header-img-filter::after{
+        background-color: #333;
+        content: '';
+        height: 530px;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        border-radius: 80% 20% 82% 18% / 83% 18% 82% 17%;
+    }
+    .animation-from-top{
+        animation: from-top 2s linear forwards;
+        position: relative;
+        opacity: 0;
+    }
+    .animation-from-right{
+        animation: from-right 2s linear forwards;
+        position: relative;
+        opacity: 0;
+    }
+    @keyframes from-top {
+        from{
+            bottom: 100px;
+        }
+        to{
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes from-right {
+        from{
+            left: 100px;
+        }
+        to{
+            left: 0;
+            opacity: 1;
+        }
     }
 }
