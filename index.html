@@ -1,69 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiegoABastidasC</title>
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/1200px/general1200px.css">
-    <link rel="stylesheet" href="css/992px/general992px.css">
-    <link rel="stylesheet" href="css/768px/general768px.css">
-    <link rel="shortcut icon" href="svg/dev.svg" type="image/x-icon">
-</head>
-<body>
-    <div class="page-container">
-        <div class="page-header">
-            <header>
-                <section class="header">
-                    <div class="header-text-container">
-                        <h1 class="animation-from-top"> Bienvenidos a mi portafolio </h1>  
-                        <h2 class="animation-from-top"> mi nombre es Diego Bastidas </h2>
-                    </div>
-                    <div class="header-img-container">
-                        <img class="animation-from-right" src="png/foto-frontal-2.png" alt="" style="max-height: 90vh;">
-                        <div class="header-img-filter animation-from-right"></div>
-                    </div>
-                </section>
-            </header>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- add bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style media="screen">
+      *{ margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #212121; color: white; font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      section{
+        margin: auto;
+        max-width: 70%;
+      }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+    <body>
+      <nav class="navbar navbar-dark bg-dark"></nav>
+        <a class="navbar-brand" href="#">DuckGame</a>
+        <button class="btn btn-outline-light my-2 my-sm-0" onclick="useSpanish()" style="margin-right: 10px;">Español</button>
+        <button class="btn btn-outline-light my-2 my-sm-0" onclick="useEnglish()">English</button>
+      </nav>
+      <section id="english">
+
+        <h1>Privacy Policy</h1>
+        
+        <p>At DuckGame, we respect and protect the privacy of our users. This Privacy Policy describes how we collect, use, and share personal information of users of our mobile application. By using our application, you agree to the practices described in this policy.</p>
+        
+        <h2>1. Information Collected</h2>
+        
+        <p>We do not collect or store any personally identifiable information (PII) from users of our application. We do not request permissions to access device information, such as contacts, messages, location, or any other type of personal data. We also do not use cookies or similar technologies to collect information about users.</p>
+        
+        <h2>2. Use of Information</h2>
+        
+        <p>Since we do not collect personal information from users, we do not use any information for marketing, advertising, or any other purposes. Our application does not have functionalities that require or utilize user's personal information.</p>
+        
+        <h2>3. Sharing Information</h2>
+        
+        <p>As we do not collect personal information, we do not share any user data with third parties. We do not sell, rent, or disclose personal information to any external entities.</p>
+        
+        <h2>4. Information Security</h2>
+        
+        <p>We are committed to protecting users' personal information and take reasonable measures to maintain data security. However, due to the nature of electronic communications and storage, we cannot guarantee the absolute security of transmitted or stored information in our application.</p>
+        
+        <h2>5. Changes to the Privacy Policy</h2>
+        
+        <p>We may update this Privacy Policy from time to time. We recommend reviewing this policy periodically to stay informed of any changes. Your continued use of our application after making changes to this policy will be considered as acceptance of such changes.</p>
+        
+        <div class="contact-info">
+          <p>Contact us:</p>
+          <p>Email: diegoprb3@gmail.com</p>
         </div>
-        <div class="page-main">
-            <main>
-                <section class="main">
-                    <h1>Productos</h1>
-                    <div class="products-container">
-                        <div class="product-card">
-                            <div class="product-img-container">
-                                <img src="svg/chrome.svg" alt="">
-                            </div>
-                            <h1 class="product-title">Páginas Web</h1>
-                            <p class="product-text">Puedes solicitar tu página web a la medida, puede ser únicamente publicitaria o funcional con bases de datos e incluir otras funcionalidades.</p>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="svg/play store.svg" alt="">
-                            </div>
-                            <h1 class="product-title">Apliaciones Móviles</h1>
-                            <p class="product-text">Aplicaciones móviles en Android: Play Store si quieres una interacción más familiar con tus clientes.</p>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="svg/microchip.svg" alt="">
-                            </div>
-                            <h1 class="product-title">Soluciónes Electrónicas</h1>
-                            <p class="product-text">Si requieres algún dispositivo electrónico o la reparación de alguno nosotros podemos repararlo o diseñarlo para ti.</p>
-                        </div>
-                    </div>
-                </section>
-            </main>
+      </section>
+      <section id="spanish">
+
+        <h1>Política de privacidad</h1>
+        
+        <p>En DuckGame, respetamos y protegemos la privacidad de nuestros usuarios. Esta Política de privacidad describe cómo recopilamos, utilizamos y compartimos información personal de los usuarios de nuestra aplicación móvil. Al utilizar nuestra aplicación, aceptas las prácticas descritas en esta política.</p>
+        
+        <h2>1. Información recopilada</h2>
+        
+        <p>No recopilamos ni almacenamos ninguna información de identificación personal (PII) de los usuarios de nuestra aplicación. No solicitamos permisos para acceder a la información del dispositivo, como contactos, mensajes, ubicación u otro tipo de datos personales. Tampoco utilizamos cookies u otras tecnologías similares para recopilar información sobre los usuarios.</p>
+        
+        <h2>2. Uso de la información</h2>
+        
+        <p>Dado que no recopilamos información personal de los usuarios, no utilizamos ninguna información con fines de marketing, publicidad u otros fines. Nuestra aplicación no tiene funcionalidades que requieran o utilicen información personal del usuario.</p>
+        
+        <h2>3. Compartir información</h2>
+        
+        <p>Dado que no recopilamos información personal, no compartimos ningún dato de usuario con terceros. No vendemos, alquilamos ni divulgamos información personal a entidades externas.</p>
+        
+        <h2>4. Seguridad de la información</h2>
+        
+        <p>Nos comprometemos a proteger la información personal de los usuarios y tomamos medidas razonables para mantener la seguridad de los datos. Sin embargo, debido a la naturaleza de las comunicaciones y el almacenamiento electrónicos, no podemos garantizar la seguridad absoluta de la información transmitida o almacenada en nuestra aplicación.</p>
+        
+        <h2>5. Cambios en la política de privacidad</h2>
+        
+        <p>Podemos actualizar esta Política de privacidad periódicamente. Recomendamos revisar esta política periódicamente para estar informado de los cambios. El uso continuado de nuestra aplicación después de realizar cambios en esta política se considerará como aceptación de dichos cambios.</p>
+        
+        <div class="contact-info">
+          <p>Contáctanos:</p>
+          <p>Email: diegoprb1@gmail.com</p>
         </div>
-        <div class="page-footer">
-            <footer>
-                <section class="main">
-                </section>
-            </footer>
-        </div>
-    </div>
-    <script src="script/restart-animations.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</body>
+      </section>
+    
+    <!-- script para hacer toggle entre section english y spanish-->
+    <script>
+      const english = document.getElementById('english');
+      const spanish = document.getElementById('spanish');
+      english.style.display = 'block';
+      spanish.style.display = 'none';
+      
+      function useSpanish() {
+        english.style.display = 'none';
+        spanish.style.display = 'block';
+      }
+      
+      function useEnglish() {
+        english.style.display = 'block';
+        spanish.style.display = 'none';
+      }
+    </script>
+    </body>
 </html>
+
